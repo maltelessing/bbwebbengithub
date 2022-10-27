@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css?family=Silkscreen');
+body {
+  margin: 0;
+  background: #DED55C;
+}
+
+.parent > div {
+    display: flex;
+
+
+    font-size: 2em;
+    color: #ffeead;
+}
+
+.parent > div > img {
+    width: 200%;
+    height: 200%;
+    object-fit: cover;
+}
+
+
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1em;
+  align-items: left;
+  text-align: center;
+
+  background: green;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+ }
+
+
+}
+
+.3 {
+  grid-column: 4;
+}
+
+.4 {
+  grid-column: 5;
+}
+
+.navLinks {
+  font-family: 'Silkscreen', cursive;
+  font-size: 2.0em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: yellowgreen;
+}
+.logo {
+  font-family: 'Silkscreen', cursive;
+  font-size: 2.0em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: yellowgreen;
+}
+
+.navLinks:hover {
+  color: darkgreen;
+  border-left: 3px solid darkgreen;
+  border-right: 3px solid darkgreen;
+  padding: 0.1em 0.1em;
+}
+
+#twist {
+  color: blue;
+}
