@@ -1,8 +1,8 @@
-
 @import url('https://fonts.googleapis.com/css?family=Silkscreen');
 body {
   margin: 0;
-  background: #DED55C;
+  background: #5c4033
+;
 }
 
 .parent > div {
@@ -38,7 +38,14 @@ nav {
     grid-template-rows: auto;
     grid-gap: 1em;
  }
+ .indexbild {
 
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+  height: auto;
+ }
 
 }
 
@@ -74,4 +81,22 @@ nav {
 
 #twist {
   color: blue;
+}
+
+.indexbild {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+  .first-txt {
+    position: absolute;
+    top: 600px;
+    left: 280px;
+    color: yellowgreen;
+    font-family: 'Silkscreen', cursive;
+    font-size:3.0em;
+
+
 }

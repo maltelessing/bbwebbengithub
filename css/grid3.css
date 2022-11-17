@@ -1,32 +1,84 @@
 .parent {
-    display: grid;
-    grid-gap: 130px;
-    row-gap: 143px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-auto-rows: 75px;
-    grid-auto-flow: dense;
+    display:grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "1 2 3 storbild text"
+    "4 5 6 storbild text";
+     grid-gap: 0.5rem;
 }
 
+#1{
+  grid-area: 1;
+}
+#2{
+  grid-area: 2;
+}
+#3{
+  grid-area: 3;
+}
+#4{
+  grid-area: 4;
+}
+#5{
+  grid-area: 5;
+}
+#6{
+  grid-area: 6;
+}
+#storbild{
+  grid-area: storbild;
 
+}
+#text{
+  grid-area: text;
 
-.storbild {
-    grid-column: span 2;
-    grid-row: span 2;
 }
 
-@media screen and (max-width: 600px) {
-  .page {
-    grid-template-columns: 1;
-    grid-template-rows: 2;
+#walter1 {
+  width: 70%;
+  height: 50%;
 }
 
-.page {
-    display: grid;
-    grid-gap: 0px;
-    row-gap: 0px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-auto-rows: 150px;
-    grid-auto-flow: dense;
+#walter2 {
+  width: 70%;
+  height: 50%;
 }
 
-.footer
+#walter3 {
+  width: 70%;
+  height: 50%;
+}
+
+#walter4 {
+  width: 70%;
+  height: 50%;
+}
+
+#walter5 {
+  width: 70%;
+  height: 50%;
+}
+
+#walter6 {
+  width: 70%;
+  height: 50%;
+}
+
+#gusstor {
+  width: 100%;
+  height: 76%;
+}
+@media screen and (max-width: 550px) {
+  .parent{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    grid-template-areas:
+      "1 2 3"
+      "4 5 6"
+      "storbild storbild storbild"
+      "text text text";
+    }
+
+  }
