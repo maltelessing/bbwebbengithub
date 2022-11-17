@@ -38,7 +38,7 @@ nav {
     grid-template-rows: auto;
     grid-gap: 1em;
  }
- 
+
 }
 
 .3 {
@@ -80,7 +80,14 @@ nav {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+
+
+}
+.indexbild img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
   .first-txt {
     position: absolute;
@@ -89,6 +96,16 @@ nav {
     color: yellowgreen;
     font-family: 'Silkscreen', cursive;
     font-size:3.0em;
+
+
+}
+.second-txt {
+  position: absolute;
+  top: 700px;
+  left: 250px;
+  color: yellowgreen;
+  font-family: 'Silkscreen', cursive;
+  font-size:2.0em;
 
 
 }
